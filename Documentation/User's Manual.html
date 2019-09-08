@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Internal css used for a scroll back to the top of the page button.
+	-->
+	<style type="text/css">
+		#myBtn
+		{
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 30px;
+			z-index: 99;
+			font-size: 18px;
+			border: none;
+			outline; none;
+			background-color: rgb(58, 156, 242);
+			color: white;
+			cursor: pointer;
+			padding: 15px;
+			border-radius: 4px;
+			font-family: Garamond;
+		}
+		
+		#myBtn:hover
+		{
+			background-color: rgb(209, 27, 45);
+		}
+	</style>
+</head>
+<body>
+	<title>User's Manual</title>
+	<ul>
+		<li><a href="index.html">Index</a></li>
+	</ul>
+	
+	<h1>User's Manual</h1>
+	<h2><u>Setup</u></h2>
+	<p>
+		Before you are able to view the 50StatesInfo website, make sure you have installed XAMPP to your computer.
+		<h3>Downloading XAMPP</h3>
+		<p>
+			<b>
+				<li>
+					To start, go to your browser and type in XAMPP in the search bar. Once you have clicked
+					"Search" you should get the following result:
+				</li>
+			</b><br><br>
+				
+			<img src="images/xamppDownload.png">
+			<br><br><br><br><br>
+			
+			<b>
+				<li>
+					Click on the first link and you should be directed to this webpage:
+				</li>
+			</b><br><br>
+			
+			<img src="images/xamppHome.png">
+			<br><br><br><br><br>
+			
+			<b>
+				<li>
+					Here you can click on the version you need to download for your computer. I will be choosing
+					XAMPP for Windows for demonstration purposes.
+				</li><br>
+				<li>
+					Once you click
+					on the version you need, a new page will open in a new tab on your browser. Wait for the file to finish 
+					downloading and once it is done, click on the file to open it. I have attached a picture below
+					with a yellow box and a yellow star to help you locate the file once it is finished downloading.
+				</li>
+			</b><br><br>
+			
+			<img src="images/xamppWindows.png">
+			<br><br><br><br><br>
+			
+			<b>
+				<li>
+					Once you have clicked on the file, a notification will come up on your computer asking you if
+					will allow the file to make changes to your computer. Click "Yes" and follow the instructions
+					that follow, making sure to go along with the default settings.
+				</li>
+			</b><br><br>
+			
+				<h3>
+					<em>
+						Now that you have finished downloading XAMPP onto your computer, read the following directions
+						to get the 50StatesInfo website running on your machine!
+					</em>
+				</h3>
+		</p><br>
+		
+		<h3>Moving Files</h3>
+		<p>
+			This section helps with moving folders into the XAMPP folder for viewing webpages and websites on web browsers.
+			<b>
+				<li>
+					Open up your File Explorer folder that should be located at the bottom section of your computer. Once the
+					folder opens up, go to the left-hand side of the window and click on "Windows (C:)".
+				</li>
+			</b><br><br>
+			
+			<img src="images/fileExplorer.png">
+			<br><br><br><br><br>
+			
+			<b>
+				<li>
+					The following image shows where the "Windows (C:)" folder is located at by having a yellow box around it.
+					The image also shows that we will now be clicking on the folder named "xampp".
+				</li>
+			</b><br><br>
+			
+			<img src="images/fileWindows.png">
+			<br><br><br><br><br>
+			
+			<b>
+				<li>
+					Once clicking on the folder named "xampp", the following image should appear on your screen.
+					Click on the folder named "htdocs", it is highlighted once again in a yellow box in the image below.
+				</li>
+			</b><br><br>
+			
+			<img src="images/fileHTDOCS.png">
+			<br><br><br><br><br>
+			
+			<b>
+				<li>
+					Now that we are in the "htdocs" folder, we can copy and paste the folder that we wish to view on our browser.
+					You may also drag and drop the folder that you wish to view online here. The folder that we will be using
+					is named "Senior Project". In the image below I have highlighted the folder for you to compare your screen to.
+				</li>
+			</b><br><br>
+			
+			<img src="images/fileProject.png">
+			<br><br><br><br><br>
+			
+		</p>
+		
+		<h3><u>Viewing the file/folder</u></h3>
+		<p>
+			This section helps with being able to view the folder "Senior Project" that we have placed into the "htdocs" folder 
+			on a browser.
+			<b>
+				<li>
+					Go to the start menu and click on the XAMPP folder on your computer. Once you have selected the folder, go down
+					to "XAMPP Control Panel" and click on the application. 
+				</li><br><br>
+				
+				<img src="images/xamppFolder.png">
+				<br><br>
+				
+				<img src="images/xamppSelect.png">
+				<br><br><br><br><br>
+				
+				<li>
+					Once the application loads up, it should look like the image displayed below.
+				</li>
+			</b><br><br>
+			
+			<img src="images/xamppPanel.png">
+			<br><br><br><br><br>
+			
+			<b>
+				<li>
+					Click on the "Start" button next to "Apache" and "MYSQL". The applications are ready to go
+					once the color that highlights both names is green like in the picture below.
+				</li>
+			</b><br><br>
+		
+			<img src="images/xamppGO.png">
+			<br><br><br><br><br>
+			
+			<b>
+				<li>
+					Now that the Apache app and the MYSQL app are running, we will go back to the browser to view
+					the 50StatesInfo website. In the browser, type in 
+					<br><em>localhost/Senior Project/Senior Project Homepage.php</em>
+					in the search bar as pictured below. 
+				</li>
+			</b><br><br>
+		
+			<img src="images/websiteLIVE.png">
+			<br><br><br><br><br>
+			
+			<b>
+				<li>
+					What we just typed is calling the localhost, telling it that we have activated Apache and MYSQL
+					in the XAMPP Control Panel to help us view the website. The <em>Senior Project</em> that follows the <em>localhost</em>
+					is calling the folder in htdocs where we have placed the website we are trying to view. Finally, <em>Senior Project
+					Homepage.php</em> is the folder that holds all of the information that will help to run the 50StatesInfo website. 
+				</li>
+			</b><br><br>
+		</p>
+	</p>
+	
+	<h2><u>Navigating through 50StatesInfo website</u></h2>
+	<h3>The homepage</h3>
+	<p>
+		<b>
+			<li>
+				The homepage of 50StatesInfo has a quick section on the left-hand side explaining how the website 
+				works and why it was made. On the right-hand side of the webpage there are links to visit that open in 
+				a new tab on the browser you are on. The links also change color as it appears in the image below.
+			</li>
+		</b><br><br>
+		
+		<img src="images/50Home.png">
+		<br><br><br><br><br>
+		
+		<b>
+			<li>
+				The following pages of the 50StatesInfo website contains information on the left-hand side of each page
+				over the climate in the region along with tables showing pictures of the states in that specific region. The 
+				pictures are of each state flag, flower, and of the state itself. There are also tables that help with expanding 
+				the abbreviations of each state to make for a better experience with reading the picture tables. <br>
+				
+				The right-hand side of each page shows a table that is scrollable and holds textual information over each state in
+				the region. It is strongly advised to view both the textual information on the right-hand side of the webpage
+				with the left-hand side to add to a more well-rounded experience. <br>
+				Below I have included what each webpage on the 50StatesInfo website should look like, enjoy learning! 
+				<br><br>
+				<em>
+					It can be noted that each webpage has a button that appears once you have scrolled down the page, that
+					button appears with the letters "Top" and is colored purple. Once you hover over the button, the color
+					of it should turn orange. This button, once clicked, takes you back up to the top of the webpage, like 
+					the button that is included here on the manual website! <br>
+				</em>
+			</li>
+	
+		</b><br><br>
+		
+		<h3>Midwest region</h3>
+		
+		<img src="images/midwestManual1.png">
+		<br><br>
+		<img src="images/midwestManual2.png">
+		<br><br><br><br><br>
+		
+		<h3>Northeast region</h3>
+		
+		<img src="images/northeastManual1.png">
+		<br><br>
+		<img src="images/northeastManual2.png">
+		<br><br><br><br><br>
+		
+		<h3>Southeast region</h3>
+		
+		<img src="images/southeastManual1.png">
+		<br><br>
+		<img src="images/southeastManual2.png">
+		<br><br><br><br><br>
+		
+		<h3>Southwest region</h3>
+		
+		<img src="images/southwestManual1.png">
+		<br><br>
+		<img src="images/southwestManual2.png">
+		<br><br><br><br><br>
+		
+		<h3>Western region</h3>
+		
+		<img src="images/westernManual1.png">
+		<br><br>
+		<img src="images/westernManual2.png">
+		<br><br><br>
+		
+	<h2><em>Thank you for reading through this manual!</em></h2><br>
+	</p>
+	
+	
+	<!--Here is the button being created in HTML-->
+	<button onclick="topFunction()" id="myBtn" title="Go to Top">Top</button>
+	
+	<script>
+	/*
+	  This shows the button once the user scrolls
+      down 20px
+   */
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction()
+	{
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+		{
+			document.getElementById("myBtn").style.display = "block";
+		}else
+		{
+			document.getElementById("myBtn").style.display = "none";
+		}
+	}
+	
+	/*
+	  This function is for when the user
+	  clicks on the button the button
+	  should take the user back to the
+	  top of the page.
+	*/
+	function topFunction()
+	{
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+	</script>
+</body>
+</html>

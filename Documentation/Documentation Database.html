@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Internal css used for a scroll back to the top of the page button.
+	-->
+	<style type="text/css">
+		#myBtn
+		{
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 30px;
+			z-index: 99;
+			font-size: 18px;
+			border: none;
+			outline; none;
+			background-color: rgb(180,34,196);
+			color: white;
+			cursor: pointer;
+			padding: 15px;
+			border-radius: 4px;
+			font-family: Garamond;
+		}
+		
+		#myBtn:hover
+		{
+			background-color: rgb(255,154,0);
+		}
+	</style>
+</head>
+<body>
+	<title>Documentation of the database</title>
+	<ul>
+		<li><a href="index.html">Index</a></li>
+	</ul>
+	<h1>Documentation of the database</h1>
+	<h2><u>Schemas of the tables</u></h2>
+	<p>
+		<img src="images/SchemasDatabase.png">
+	</p>
+	
+	<h2><u>Design for queries</u></h2>
+	<p>
+		<img src="images/DatabaseDesign.png">
+		<img src="images/DatabaseDesignTbles.png">
+	</p>
+	<br><br>
+	<h2><u>Printout of structure and contents of database files</u></h2>
+	<p>
+		<img src="images/DatabaseStructure.png"><br><br><br>
+		
+		<h3><u>Region Table Contents</u></h3>
+		<img src="images/RegionContents.png"><br><br>
+		
+		<h3><u>States Table of Contents</u></h3>
+		<img src="images/StatesContent1.png"><br><br>
+		<img src="images/StatesContent2.png"><br><br>
+		<img src="images/StatesContent3.png"><br><br>
+		<img src="images/StatesContent4.png"><br><br>
+	</p>
+	
+	
+	<!--Here is the button being created in HTML-->
+	<button onclick="topFunction()" id="myBtn" title="Go to Top">Top</button>
+	
+	<script>
+	/*
+	  This shows the button once the user scrolls
+      down 20px
+   */
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction()
+	{
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+		{
+			document.getElementById("myBtn").style.display = "block";
+		}else
+		{
+			document.getElementById("myBtn").style.display = "none";
+		}
+	}
+	
+	/*
+	  This function is for when the user
+	  clicks on the button the button
+	  should take the user back to the
+	  top of the page.
+	*/
+	function topFunction()
+	{
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+	</script>
+</body>
+</html>
